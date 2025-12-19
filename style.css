@@ -7,12 +7,12 @@
   font-family: "Montserrat", sans-serif;
 }
 body{
-    position:relative;
     min-height: 100vh;
     position: relative;
 }
 
 header{
+    position: relative;
     width:100%;
     height: 300px;
     background-image: url("assets/img/pokemon.jpg");
@@ -24,13 +24,41 @@ header{
 }
 
 nav{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
   padding: 1rem;
   background-color: #F8D321;
   border-bottom: 4px solid #335CB6;
   border-left: 4px solid #335CB6;
   border-right: 4px solid #335CB6;
+  margin-bottom: 10px;
 }
 
+
+@media only screen and (min-width:601px) {
+  .logo img{
+    max-width:210px;
+    position: absolute;
+    float: left;
+    margin-top: -22px;
+  }
+}
+
+@media screen and (max-width: 600px), and screen and (min-width: 451px) {
+  .logo img{
+    margin-top: -14px;
+    position: absolute;
+    float: left;
+    max-width: 140px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .logo img{
+    display:none;
+  }
+  
+}
 nav ul{
   text-align: right;
 }
@@ -51,12 +79,14 @@ nav a{
 }
 
 nav a:hover{
-  border-color: #fff;
+  border-color: #335CB6;
 }
 
-#pokedex-logo{
-  width: 267px;
-  height: 144px;
+h1 {
+  margin: 30px 10px;
+  padding-left: 10px;
+  color: #2C2E9A;
+  text-decoration: underline #335CB6;
 }
 
 form {
@@ -72,10 +102,10 @@ form {
   padding: 15px 20px;
   border-radius: 15px;
 }
-.titular {
-  display:absolute;
-  float: left;
-  
+.form-group input {
+  border: solid 1px #333;
+  outline: none;
+  font-size: 16px;
 }
 p{
     margin: 10px;
@@ -132,11 +162,13 @@ span.fairy {
 }
 
 span.bug {
-  background-color: red;
+  background-color: rgb(203, 57, 86);
   color: white;
 }
 
 .cartes-pokemon{
   display: grid;
   grid-template-columns: repeat (4, 1fr);
+  gap: 20px;
 }
+
