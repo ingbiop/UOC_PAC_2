@@ -4,8 +4,10 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 body{
+    position:relative;
     min-height: 100vh;
     position: relative;
 }
@@ -15,14 +17,18 @@ header{
     height: 300px;
     background-image: url("assets/img/pokemon.jpg");
     background-size:cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y:45%;
     background-repeat: no-repeat;
+    border: 4px solid #335CB6;
 }
 
 nav{
   padding: 1rem;
-  background-color: blueviolet;
-  border: 1px solid #fff;
+  background-color: #F8D321;
+  border-bottom: 4px solid #335CB6;
+  border-left: 4px solid #335CB6;
+  border-right: 4px solid #335CB6;
 }
 
 nav ul{
@@ -35,8 +41,10 @@ nav ul li{
 }
 
 nav a{
-  color: #fff;
-  text-decoration: none;
+  color: #335CB6;
+  font-size: larger;
+  font-weight:550;
+  text-decoration:none;
   padding: 2px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -46,15 +54,39 @@ nav a:hover{
   border-color: #fff;
 }
 
+#pokedex-logo{
+  width: 267px;
+  height: 144px;
+}
+
+form {
+  display:flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-group {
+  display:flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+.titular {
+  display:absolute;
+  float: left;
+  
+}
 p{
     margin: 10px;
 }
 span{
     padding: 5px;
-    border: 1px solid #333;
+   /* border: 1px solid #333;*/
     border-radius: 5px;
     margin: 5px 3px;
     padding: 5px 20px;
+    width: auto;
 }
 
 span.grass {
@@ -73,4 +105,38 @@ span.fire {
 span.water {
     background-color: #4592C4;
     color:white;
+}
+
+span.flying {
+  background-color: #3DC7EF;
+  color: white;
+}
+
+span.earth {
+  background-color: rgb(124, 78, 18);
+  color: white;
+}
+
+span.electric {
+  background-color: rgb(240, 215, 31);
+  color: #333;
+}
+span.normal {
+  background-color: grey;
+  color: white;
+}
+
+span.fairy {
+  background-color: rgb(215, 126, 199);
+  color: white;
+}
+
+span.bug {
+  background-color: red;
+  color: white;
+}
+
+.cartes-pokemon{
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
 }

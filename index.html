@@ -3,8 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inici</title>
+        <title>Pokedex</title>
+        <!--importem de google fonts la lletra Montserrat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        <!--importem el document d'estils-->
         <link rel="stylesheet" href="style.css">
+        <!--importem el document d'interactivitat-->
         <script defer src="script.js"></script>
     </head>
     <body>
@@ -18,26 +24,135 @@
             </ul>
         </nav>
         <main>
-            <h1 id="titol-pagina">Llistat de Pokémons</h1>
-            <h2></h2>
-                    <div>
+            <div class="titular">
+                <h1>Llistat de Pokémons</h1>
+                <img id="pokedex-logo" src="assets/img/POKEDEX_CARDS.webp" alt="logo Pokedex" alt="card pokedex gameboy">
+            </div>
+            
 
-            <div id="bulbasaur">
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/001.png">
-                <h3>Bulbasaur</h3>
-                <p><span class="grass">Grass</span><span class="poison">Poison</span></p>
+            <div class="container-filter">
+                <div class="icon-filter">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                    </svg>
+                </div>
+                <span>Filtrar</span>
             </div>
-            <div id="charmander">
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png">
-                <h3>Charmander</h3>
-                <p><span class="fire">Fire</span></p>
-            </div>
-            <div id="squirtle">
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/007.png">
-                <h3>Squirtle</h3>
-                <p><span class="water">Water</span></p>
+            <form>
+                <div class="form-group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-search">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <input type="search" placeholder="Busca el teu Pokémon">
+                </div>
+                <button class="cerca">Buscar</button>
+            </form>
+            
+            <div class="cartes-pokemon">
+                <div id="bellsprout">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/069.png">
+                    <h2>Bellsprout</h2>
+                    <p><span class="grass">Planta</span><span class="earth">Terra</span></p>
+                </div>
+                <div id="bulbasaur">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/001.png">
+                    <h2>Bulbasaur</h2>
+                    <p><span class="grass">Planta</span><span class="poison">Verí</span></p>
+                </div>
+                <div id="butterfree">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/012.png">
+                    <h2>Butterfree</h2>
+                    <p><span class="bug">Bitxo</span><span class="flying">Volador</span></p>
+                </div>
+                <div class="charizard">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/006.png">
+                    <h2>Charizard</h2>
+                    <p><span class="fire">Foc</span><span class="flying">Volador</span></p>
+                </div>
+                <div id="charmander">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png">
+                    <h2>Charmander</h2>
+                    <p><span class="fire">Foc</span></p>
+                </div>
+                <div id="clefairy">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/035.png">
+                    <h2>Clefairy</h2>
+                    <p><span class="fairy">Fada</span></p>
+                </div>
+                <div id="lanturn">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/171.png">
+                    <h2>Lanturn</h2>
+                    <p><span class="water">Aigua</span><span class="electric">Elèctric</span></p>
+                </div>  
+                <div id="meouth">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/052.png">
+                    <h2>Meowth</h2>
+                    <p><span class="normal">Normal</span></p>
+                </div>
+                <div id="pidgey">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/016.png">
+                    <h2>Pidgey</h2>
+                    <p><span class="normal">Normal</span><span class="flying">Volador</span></p>
+                </div>
+                <div id="pikachu">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/025.png">
+                    <h2>Pikachu</h2>
+                    <p><span class="electric">Elèctric</span></p>
+                </div>
+                <div id="sandslash">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/028.png">
+                    <h2>Sandslash</h2>
+                    <p><span class="earth">Terra</span></p>
+                </div>               
+                <div id="squirtle">
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/007.png">
+                    <h2>Squirtle</h2>
+                    <p><span class="water">Aigua</span></p>
+                </div>
+              
             </div>
         </main>
 
+        <div class="aside-filter">
+            <span>Tipus:</span>
+             <div class="grup1">
+                <input type="checkbox" name="water" id="water">
+                <label for="water">Aigua</label>
+            </div> 
+            <div class="grup2">
+                <input type="checkbox" name="bug" id="bug">
+                <label for="bug">Bitxo</label>
+            </div>
+            <div class="grup3">
+                <input type="checkbox" name="electric" id="electric">
+                <label for="electric">Elèctric</label>
+            </div> 
+            <div class="grup4">
+                <input type="checkbox" name="fairy" id="fairy">
+                <label for="fairy">Fada</label>
+            </div>
+            <div class="grup5">
+                <input type="checkbox" name="fire" id="fire">
+                <label for="fire">Foc</label>
+            </div>
+            <div class="grup6">
+                <input type="checkbox" name="normal" id="normal">
+                <label for="normal">Normal</label>
+            </div> 
+            <div class="grup7">
+                <input type="checkbox" name="grass" id="grass">
+                <label for="grass">Planta</label>
+            </div>
+            <div class="grup8">
+                <input type="checkbox" name="earth" id="earth">
+                <label for="earth">Terra</label>
+            </div>
+            <div class="grup9">
+                <input type="checkbox" name="flying" id="flying">
+                <label for="flying">Volador</label>
+            </div>
+             
+
+        </div>
     </body>
 </html>
