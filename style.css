@@ -42,6 +42,7 @@ nav{
     position: absolute;
     float: left;
     margin-top: -22px;
+    transition: all 1s;
   }
 }
 
@@ -51,11 +52,13 @@ nav{
     position: absolute;
     float: left;
     max-width: 140px;
+    transition: all 1s;
   }
 }
 @media only screen and (max-width: 450px) {
   .logo img{
     display:none;
+    transition: all 1s;
   }
   
 }
