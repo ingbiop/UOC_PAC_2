@@ -214,10 +214,9 @@ span.bug {
 }
 
 .cartes-pokemon{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-content: center;
-  width: 100%;
   gap: 20px;
 }
 
@@ -239,7 +238,7 @@ span.bug {
 
 .hidden-pannel.show {
   position: absolute;
-  bottom: 5000px;
+  top: 000px;
   left: 50px;
   display: block;
 }
