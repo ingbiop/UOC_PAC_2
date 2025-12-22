@@ -42,7 +42,7 @@ nav{
   .logo img{
     max-width:210px;
     position: absolute;
-    float: left;
+   /* float: left;*/
     margin-top: -22px;
     transition: all 1s;
   }
@@ -52,12 +52,23 @@ nav{
   .logo img{
     margin-top: -14px;
     position: absolute;
-    float: left;
+   /* float: left;*/
     max-width: 140px;
     transition: all 1s;
   }
 }
-@media only screen and (max-width: 450px) {
+
+@media screen and (max-width: 450px), and screen and (min-width: 351px) {
+  .logo img{
+    margin-top: -3px;
+    position: absolute;
+   /* float: left;*/
+    max-width: 85px;
+    transition: all 1s;
+  }
+}
+
+@media only screen and (max-width: 350px) {
   .logo img{
     display:none;
     transition: all 1s;
@@ -100,22 +111,69 @@ h1 {
 }
 
 .container-filter{
-  display: relative;
-  margin: 30px 10px;
   display: flex;
+  position: relative;
+  margin: 30px 10px;
   align-items:center;
   justify-content: space-between;
 }
 
+.icon-filter {
+  display: block;
+}
+
 .icon-filter svg{
   margin-left: 5px;
-  width: 50px
+  width: 50px;
+  margin-bottom: -18px
+
+}
+
+.icon-filter a {
+  text-decoration: none;
+
+}
+
+.icon-filter span{
+  font-size: 18px;
+  font-weight: 600;
+  color: #2C2E9A;
+}
+@media screen and (max-width: 600px), and screen and (min-width: 560px) {
+  .icon-filter{
+    svg {
+      width: 40px;
+      margin-bottom: -13px;
+      transition: all .5s;
+    }
+    span{
+      font-size: 18px;
+      margin-left: -5px;
+      transition: all .5s;
+    }
+  }
+}
+
+
+@media screen and (max-width: 559px) {
+  .icon-filter{
+    svg {
+      width: 40px;
+      margin-bottom: -13px;
+      transition: all .5s;
+    }
+    span{
+      display:none;
+    }
+  }
 }
 
 form {
   display:flex;
   align-items: center;
   gap: 5px;
+  margin-bottom: -15px
+
 }
 
 .form-group {
