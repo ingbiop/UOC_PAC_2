@@ -231,3 +231,8 @@ span.bug {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+#aside-filter input {
+  margin-right: 5px;
+  margin-left: -3px;
+}
