@@ -215,3 +215,13 @@ span.bug {
   gap: 20px;
 }
 
+#aside-filter {
+  margin: 20px;
+  top: 150px;
+  right: 10px;
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #F8F8F8;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
