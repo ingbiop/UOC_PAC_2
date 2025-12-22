@@ -225,3 +225,7 @@ span.bug {
   background-color: #F8F8F8;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
+
+#aside-filter div {
+  margin-left: 15px;
+}
