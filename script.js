@@ -43,7 +43,7 @@ search.addEventListener('input', (e) => {
 
 
 const click = document.querySelector('#click')
-const panel = document.querySelector('.hidden-pannel')
+const panel = document.querySelector('.hidden-panel')
 
 const togglePanel = () => {
   panel.classList.toggle('show')
