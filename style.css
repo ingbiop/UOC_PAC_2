@@ -139,6 +139,7 @@ h1 {
   font-weight: 600;
   color: #2C2E9A;
 }
+
 @media screen and (max-width: 600px), and screen and (min-width: 560px) {
   .icon-filter{
     svg {
@@ -172,7 +173,7 @@ form {
   display:flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: -15px
+  margin-bottom: -15px;
 
 }
 
@@ -211,6 +212,7 @@ button.cerca{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     margin: 10px;
 }
+
 p{
     margin: 10px;
 }
@@ -289,8 +291,7 @@ span.bug {
 }
 
 #aside-filter {
-  margin: 50px;
-  top: 150px;
+  position: absolute;
   right: 10px;
   border: 2px solid hsl(240, 52%, 40%);
   padding: 15px 20px 20px 20px;
@@ -300,7 +301,8 @@ span.bug {
   width:fit-content;
 }
 
-.hidden-pannel {
+
+.hidden-panel {
   display: none;
 }
 
